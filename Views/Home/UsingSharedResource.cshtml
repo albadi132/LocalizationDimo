@@ -1,0 +1,9 @@
+﻿@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<LocalizationDimo.SharedResource> SharedLocalizer
+@{
+    ViewData["Title"] = "UsingSharedResource";
+}
+
+<p>Shared resource sent from Controller: @ViewData["sharedResourceSentFromController"]</p> 
+<p>Shared resource received by this View: @SharedLocalizer["localizedUsingSharedResources"]</p> 
+
